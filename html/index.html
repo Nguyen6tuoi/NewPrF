@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Themed Modern Website</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Dark Theme Design</h1>
+        <nav>
+          <ul>
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/welcome.html">Welcome</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- Adding link to the welcome page in the main content -->
+        <section id="home">
+          <h2>Welcome to Our Modern Dark Themed Website</h2>
+          <p>
+            This template features a sleek, modern design with a dark theme.
+            It’s perfect for showcasing your business or portfolio.
+          </p>
+          <a href="welcome.html" class="btn">Visit Welcome Page</a>
+        </section>
+
+        <section id="about" class="about-us">
+          <div class="container">
+              <h2>About Us</h2>
+              <p>We are a creative agency specializing in web design, development, and digital marketing. Our goal is to deliver top-notch services with a focus on user experience and satisfaction.</p>
+          </div>
+      </section>
+
+        <section class="testimonials">
+          <div class="container">
+              <h2>What Our Clients Say</h2>
+              <div class="testimonial-item">
+                  <p>"This is a fantastic service! Highly recommend."</p>
+                  <p>- Client Name</p>
+              </div>
+              <div class="testimonial-item">
+                  <p>"Amazing experience from start to finish."</p>
+                  <p>- Another Client Name</p>
+              </div>
+          </div>
+      </section>
+      
+        <section id="services">
+          <h2>Our Services</h2>
+          <div class="services">
+            <div class="service-item">
+              <!-- <img src="../icons/web-development.png" alt="Web Development Icon"> -->
+              <img src="../icons/web-development.png" alt="Web Development Icon" style="margin-left: -10px; transform: translateX(-10px); padding-left: 5px;">
+              <h3>Web Development</h3>
+              <p>
+                We build responsive and performant websites that meet your
+                business needs.
+              </p>
+            </div>
+            <div class="service-item">
+              <img src="../icons/ui-ux.png" alt="UI/UX Design Icon">
+              <h3>UI/UX Design</h3>
+              <p>
+                Our design team creates intuitive and visually appealing
+                interfaces for your users.
+              </p>
+            </div>
+            <div class="service-item">
+              <img src="../icons/digital-marketing.png" alt="Digital Marketing Icon">
+              <h3>Digital Marketing</h3>
+              <p>
+                We craft strategies to boost your online presence and reach your
+                target audience effectively.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Dark Theme Design. All Rights Reserved.</p>
+        <a href="#top" class="back-to-top">↑ Return to Top</a>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript to enable Return to Top button -->
+    <script>
+      const backToTopButton = document.querySelector('.back-to-top');
+
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+          backToTopButton.classList.add('show');
+        } else {
+          backToTopButton.classList.remove('show');
+        }
+      });
+
+      backToTopButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+  </body>
+</html>
