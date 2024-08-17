@@ -15,6 +15,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    font-size: 1rem; /* Base font size */
 }
 
 /* Text Shadows for Better Visibility */
@@ -86,7 +87,7 @@ header {
 header h1 {
     margin: 0;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem; /* Adjusted font size */
     text-transform: uppercase;
 }
 
@@ -125,7 +126,7 @@ main {
 }
 
 main h2 {
-    font-size: 28px;
+    font-size: 1.75rem; /* Adjusted font size */
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -169,7 +170,7 @@ main p {
 
 .service-item h3 {
     color: #1e90ff;
-    font-size: 20px;
+    font-size: 1.25rem; /* Adjusted font size */
     margin-bottom: 10px;
 }
 
@@ -192,7 +193,7 @@ footer {
 
 footer p {
     color: #888888;
-    font-size: 14px;
+    font-size: 0.875rem; /* Adjusted font size */
     margin: 10px 0;
 }
 
@@ -347,4 +348,69 @@ input[type="submit"]:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Even stronger shadow on hover */
 }
 
-/* Add any additional custom styles here */
+/* Responsive Typography */
+@media (max-width: 1024px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    main h2 {
+        font-size: 1.6rem;
+    }
+
+    .service-item h3 {
+        font-size: 1.15rem;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-item h3 {
+        font-size: 1.1rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.7rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    main h2 {
+        font-size: 1.4rem;
+    }
+
+    .service-item h3 {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.75rem;
+    }
+}
