@@ -16,7 +16,7 @@ A brief description of what your project does and why it exists.
 
 Add a screenshot or link to a live demo of your project.
 
-![Demo Screenshot](link_to_screenshot_or_demo)
+![Demo Screenshot](../NewPrF/screenshot/scs#1.png)
 
 ## Features
 
