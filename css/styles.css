@@ -399,6 +399,7 @@ input[type="submit"]:hover {
     padding: 80px 0; /* Adjust padding as needed */
     position: relative;
     text-align: center;
+    border-radius: 5px;
 }
 
 /* Gradient Overlay */
@@ -411,6 +412,7 @@ input[type="submit"]:hover {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
     z-index: 1; /* Ensures the overlay is on top of the background image */
+    border-radius: 5px;
 }
 
 .about-us .container {
