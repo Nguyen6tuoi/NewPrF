@@ -20,17 +20,15 @@
             <li><a href="../html/welcome.html">Welcome</a></li>
             <li><a href="../html/about.html">About Us</a></li>
             <li><a href="../html/contact.html">Contact</a></li>
-
           </ul>
         </nav>
-          
       </div>
     </header>
 
     <main>
       <div class="container">
-        <!-- Adding link to the welcome page in the main content -->
-        <section id="home">
+        <!-- Enhanced Interactivity: Fade-In Sections -->
+        <section id="home" class="fade-in">
           <h2>Welcome to Our Modern Dark Themed Website</h2>
           <p>
             This template features a sleek, modern design with a dark theme.
@@ -39,32 +37,33 @@
           <a href="welcome.html" class="btn">Visit Welcome Page</a>
         </section>
 
-        <section id="about" class="about-us">
+        <section id="about" class="about-us fade-in">
           <div class="container">
-              <h2>About Us</h2>
-              <p>We are a creative agency specializing in web design, development, and digital marketing. Our goal is to deliver top-notch services with a focus on user experience and satisfaction.</p>
+            <h2>About Us</h2>
+            <p>
+              We are a creative agency specializing in web design, development, and digital marketing. Our goal is to deliver top-notch services with a focus on user experience and satisfaction.
+            </p>
           </div>
-      </section>
+        </section>
 
-        <section class="testimonials">
+        <section class="testimonials fade-in">
           <div class="container">
-              <h2>What Our Clients Say</h2>
-              <div class="testimonial-item">
-                  <p>"This is a fantastic service! Highly recommend."</p>
-                  <p>- Client Name</p>
-              </div>
-              <div class="testimonial-item">
-                  <p>"Amazing experience from start to finish."</p>
-                  <p>- Another Client Name</p>
-              </div>
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-item">
+              <p>"This is a fantastic service! Highly recommend."</p>
+              <p>- Client Name</p>
+            </div>
+            <div class="testimonial-item">
+              <p>"Amazing experience from start to finish."</p>
+              <p>- Another Client Name</p>
+            </div>
           </div>
-      </section>
-      
-        <section id="services">
+        </section>
+
+        <section id="services" class="fade-in">
           <h2>Our Services</h2>
           <div class="services">
             <div class="service-item">
-              <!-- <img src="../icons/web-development.png" alt="Web Development Icon"> -->
               <img src="../icons/web-development.png" alt="Web Development Icon" style="margin-left: -10px; transform: translateX(-10px); padding-left: 5px;">
               <h3>Web Development</h3>
               <p>
@@ -100,22 +99,7 @@
       </div>
     </footer>
 
-    <!-- Optional JavaScript to enable Return to Top button -->
-    <script>
-      const backToTopButton = document.querySelector('.back-to-top');
-
-      window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 100) {
-          backToTopButton.classList.add('show');
-        } else {
-          backToTopButton.classList.remove('show');
-        }
-      });
-
-      backToTopButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    </script>
+    <!-- Optional JavaScript to enable Return to Top button and Interactivity -->
+    <script src="../js/script.js"></script>
   </body>
 </html>

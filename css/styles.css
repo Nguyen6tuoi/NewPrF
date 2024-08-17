@@ -33,13 +33,13 @@ p {
 a {
     color: #1e90ff;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s, border-bottom 0.3s;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Shadow effect for links */
 }
 
 a:hover {
     color: #007acc;
-    text-decoration: underline;
+    border-bottom: 2px solid #007acc;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
 }
 
@@ -141,13 +141,14 @@ main p {
     color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .btn:hover {
     background-color: #007acc;
+    transform: scale(1.05);
     color: #ffffff;
 }
 
@@ -330,103 +331,20 @@ input[type="submit"]:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #1e90ff;
-    color: #fff;
-    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background: url('../icons/up-arrow.png') no-repeat center center;
+    background-size: contain;
     border-radius: 50%;
-    text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow for the button */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Increased shadow for more contrast */
+    /* background-color: #1e90ff; Ensure there’s a background color for contrast */
 }
 
 .back-to-top:hover {
-    background-color: #007acc;
+    background-color: #1a78d0; /* Darker shade on hover for contrast */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Even stronger shadow on hover */
 }
 
-/* Media Queries */
-@media (max-width: 1024px) {
-    .container {
-        width: 90%;
-    }
-
-    .col-6, .col-12 {
-        flex: 0 0 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    header, footer {
-        text-align: center;
-    }
-
-    .col-4, .col-6, .col-12 {
-        flex: 0 0 100%;
-    }
-}
-.testimonials {
-    background-color: #333; /* Slightly lighter background for contrast */
-    border-radius: 5px;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.testimonials h2 {
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-.testimonial-item {
-    background-color: #444;
-    color: #f0f0f0;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-/* About Us Section */
-.about-us {
-    background-image: url('../images/about-us.jpg');
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: #ffffff; /* Text color for better readability */
-    padding: 80px 0; /* Adjust padding as needed */
-    position: relative;
-    text-align: center;
-    border-radius: 5px;
-}
-
-/* Gradient Overlay */
-.about-us::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    z-index: 1; /* Ensures the overlay is on top of the background image */
-    border-radius: 5px;
-}
-
-.about-us .container {
-    position: relative; /* Ensures text is above the overlay */
-    z-index: 2;
-}
-
-.about-us h2 {
-    color: #ffffff;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.about-us p {
-    color: #d3d3d3; /* Light grey for text readability */
-    font-size: 18px;
-}
+/* Add any additional custom styles here */
