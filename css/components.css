@@ -1,0 +1,32 @@
+/* Buttons */
+button, .btn {
+    background: #1e90ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover, .btn:hover {
+    background: #fff;
+    color: #1e90ff;
+    transition: 0.3s;
+}
+
+/* Footer */
+footer {
+    background-color: #242424;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #444;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #888888;
+    font-size: 0.875rem;
+    margin: 10px 0;
+}

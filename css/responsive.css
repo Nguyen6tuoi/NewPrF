@@ -1,0 +1,66 @@
+/* Responsive Typography */
+@media (max-width: 1024px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    main h2 {
+        font-size: 1.6rem;
+    }
+
+    .service-item h3 {
+        font-size: 1.15rem;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-item h3 {
+        font-size: 1.1rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.7rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    main h2 {
+        font-size: 1.4rem;
+    }
+
+    .service-item h3 {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,25 @@
+/* Text Shadows for Better Visibility */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+
+p {
+    color: #e0e0e0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    margin-bottom: 15px;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+a:hover {
+    color: #007acc;
+    border-bottom: 2px solid #007acc;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
